@@ -39,14 +39,21 @@ const NavbarArea = () => {
         {linkList.map(({ href, label }, i) => (
           <NavbarItem key={i}>
             <NavLink to={href}>
-              <p className="font-workSans text-base leading-6 text-white ">{label}</p>
+              <p className="font-workSans text-base leading-6 text-white ">
+                {label}
+              </p>
             </NavLink>
           </NavbarItem>
         ))}
       </NavbarContent>
       <NavbarContent className="sm:flex hidden" justify="end">
-        <Buttons variant={"solid"} className="text-[14px]">Book a Demo</Buttons>
-        <Buttons className="bg-transparent text-white text-[14px]" variant={"bordered"}>
+        <Buttons variant={"solid"} className="text-[14px]">
+          Book a Demo
+        </Buttons>
+        <Buttons
+          className="bg-transparent text-white text-[14px]"
+          variant={"bordered"}
+        >
           Contacts us
         </Buttons>
       </NavbarContent>
@@ -60,19 +67,22 @@ const NavbarArea = () => {
       {/* menu */}
       <NavbarMenu className="bg-jungleGreen">
         {linkList.map(({ href, label }, i) => (
-          <>
-            <NavbarMenuItem key={i} href={href}>
-              <NavLink to={href}>
-                <p className="font-workSans text-base leading-6 text-white">
-                  {label}
-                </p>
-              </NavLink>
-            </NavbarMenuItem>
-          </>
+          <NavbarMenuItem key={i} href={href}>
+            <NavLink to={href}>
+              <p className="font-workSans text-base leading-6 text-white">
+                {label}
+              </p>
+            </NavLink>
+          </NavbarMenuItem>
         ))}
         <NavbarItem className="flex justify-start gap-6">
-          <Buttons variant={"solid"} className="text-[14px]">Book a Demo</Buttons>
-          <Buttons className="bg-transparent text-white text-[14px]" variant={"bordered"}>
+          <Buttons variant={"solid"} className="text-[14px]">
+            Book a Demo
+          </Buttons>
+          <Buttons
+            className="bg-transparent text-white text-[14px]"
+            variant={"bordered"}
+          >
             Contacts us
           </Buttons>
         </NavbarItem>

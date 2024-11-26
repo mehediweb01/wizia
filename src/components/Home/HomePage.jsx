@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import Partners from "./Partners";
 import Offers from "./Offers";
 import Train from "./Train";
+import Carousel from "./Carousel";
 
 const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
       <Partners />
       <Offers />
       <Train />
+      <Carousel />
     </div>
   );
 };

@@ -4,6 +4,7 @@ import Partners from "./Partners";
 import Offers from "./Offers";
 import Train from "./Train";
 import Carousel from "./Carousel";
+import Effort from "./Effort";
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
       <Offers />
       <Train />
       <Carousel />
+      <Effort />
     </div>
   );
 };

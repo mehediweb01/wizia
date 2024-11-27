@@ -6,6 +6,7 @@ import Train from "./Train";
 import Carousel from "./Carousel";
 import Effort from "./Effort";
 import GetStarted from "./GetStarted";
+import Footer from "./Footer";
 
 const HomePage = () => {
   return (
@@ -17,6 +18,7 @@ const HomePage = () => {
       <Carousel />
       <Effort />
       <GetStarted />
+      <Footer />
     </div>
   );
 };

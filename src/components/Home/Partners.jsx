@@ -9,7 +9,7 @@ const Partners = () => {
       <h3 className="text-primary font-Montserrat text-base leading-[19px] tracking-[5%] text-center">
         our trusted partners
       </h3>
-      <div className="sm:flex grid grid-cols-2 justify-center justify-items-center sm:items-center sm:gap-8 gap-1 mt-6 ">
+      <div className="sm:flex grid grid-cols-2 justify-center justify-items-center sm:items-center sm:gap-2 md:gap-8 gap-1 mt-6 ">
         <img src={backHub} alt="" />
         <img src={cableLabs} alt="" />
         <img src={dbs} alt="" />

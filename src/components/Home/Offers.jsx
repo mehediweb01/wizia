@@ -1,3 +1,4 @@
+import { Image } from "@nextui-org/react";
 const Offers = () => {
   const list = [
     {
@@ -24,7 +25,7 @@ const Offers = () => {
       <div className="grid sm:grid-cols-3 grid-cols-1 justify-center justify-items-center sm:gap-6 gap-[48px]">
         {list.map((item, i) => (
           <div className="space-y-4" key={i}>
-            <img src={item.image} alt="" />
+            <Image isBlurred isZoomed src={item.image} alt="" />
             <h3 className="font-Montserrat font-semibold sm:text-[28px] text-2xl sm:leading-9 leading-7 text-white">
               {item.title}
             </h3>
